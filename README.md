@@ -1,3 +1,5 @@
+News App built using https://newsapi.org/
+
 ```
 
 npm i 
