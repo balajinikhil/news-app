@@ -32,7 +32,7 @@ class Sources extends React.Component{
     render(){
         console.log(this.props.sources);
         return(
-            <div className="ui inverted segment">
+            <div className="ui inverted segment" style={{marginTop:"7%"}}>
                 <div className="ui inverted relaxed divided list">
                 {this.props.sources.length > 0 ? this.renderList() : <ErrorMessage/>}
             </div>

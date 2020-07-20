@@ -1,15 +1,14 @@
 import newsAPI from './../apis/newsAPI'
 
 
-export const getNews = (page=0)=>async dispatch =>{
+export const getNews = ()=>async dispatch =>{
    
 
    let response = await newsAPI.get('/top-headlines',{
     params:{
         country:'in',
-        apiKey:"9c3941a342074415a515c1e07aeaf2af",
+        apiKey:"<YOUR_API_KEY>",
         pageSize:100,
-        page:page
     }
    })
 
@@ -26,7 +25,7 @@ export const searchNews = ( term )=>async dispatch =>{
     let response = await newsAPI.get('/everything', {
         params:{
             q:term,
-            apiKey:"9c3941a342074415a515c1e07aeaf2af"
+            apiKey:"<YOUR_API_KEY>"
         }
     })
 
@@ -42,7 +41,7 @@ export const getSources = () =>async dispatch =>{
 
     let response = await newsAPI.get('/sources',{
         params:{
-            apiKey:"9c3941a342074415a515c1e07aeaf2af"
+            apiKey:"<YOUR_API_KEY>"
         }
     })
 
