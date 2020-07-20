@@ -9,4 +9,4 @@ Replace <YOUR_API_KEY> in actions
 
 ````
 TO-DO
-  1.Implement NodeJS server side API rendering.
+  1. Implement NodeJS server side API rendering.
